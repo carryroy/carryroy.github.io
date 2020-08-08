@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>零散经验 | Kedaifeng&#39;s blog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://carryroy.github.io/favicon.ico?v=1596896135624">
+<link rel="stylesheet" href="https://carryroy.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="Android控件
+Button没有src属性，而ImageButton有；
+ImageButton的android:text属性不可以直接赋值；
+
+GitHub
+mkdir test						创建文件夹test
+cd test					..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://carryroy.github.io">
+        <img src="https://carryroy.github.io/images/avatar.png?v=1596896135624" class="site-logo">
+        <h1 class="site-title">Kedaifeng&#39;s blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      Record and share
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://carryroy.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">零散经验</h2>
+            <div class="post-date">2020-08-08</div>
+            
+            <div class="post-content" v-pre>
+              <h2 id="android控件">Android控件</h2>
+<pre><code>Button没有src属性，而ImageButton有；
+ImageButton的android:text属性不可以直接赋值；
+</code></pre>
+<h2 id="github">GitHub</h2>
+<pre><code>mkdir test						创建文件夹test
+cd test							切换到test目录
+touch a.md						新建a.md文件
+pwd								显示当前目录
+cd d:/apk						切换盘符
+cd ..							返回
+cat a.md						直接看a.md内容
+rm a.md							删除a.md
+
+git status						查看状态
+git init						初始化git仓库
+git add a.md					提交a.md到仓库
+git commit -m 'first commit'	正式提交
+git log							日志
+git log --pretty=oneline		简洁版日志
+git branch						查看分支
+git branch a					新建分支a
+git checkout a					切换到分支a
+git checkout -b a				新建一个a分支，并且自动切换到a分支
+git merge a						把a分支的代码合并过来
+git branch -d a					把a分支删除
+git branch -D					强制删除a分支
+git tag v1.0					在当前代码状态下新建了一个v1.0的标签
+git tag							查看历史tag记录
+git checkout v1.0				切换到v1.0 tag的代码状态
+git checkout a.md				恢复删除的a.md
+git remote -v					查看当前项目有哪些远程仓库
+git diff a.md					查看修改了什么
+git reflog						查看commit等操作的版本号
+git reset -–hard 版本号			回退到某个版本，如最新版本
+git reset -–hard HEAD^			回退到上个版本，^^上上个版本
+git reset -–hard HEAD~100		回退到前100个版本
+
+ssh-keygen -t rsa
+指定 rsa 算法生成密钥，接着连续三个回车键（不需要输入密码），然后就会生成两个文件 id_rsa 和 id_rsa.pub ，而 id_rsa 是密钥，id_rsa.pub 就是公钥
+接下来要做的是把 id_rsa.pub 的内容添加到 GitHub 上，这样你本地的 id_rsa 密钥跟 GitHub 上的 id_rsa.pub 公钥进行配对，授权成功才可以提交代码
+
+git push origin master
+第一次推送master分支时，加上了 –u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令
+
+git push origin master
+把本地代码推到远程 master 分支
+
+git pull origin master
+意思就是把远程最新的代码更新到本地，一般我们在 push 之前都会先 pull ，这样不容易冲突
+
+git config —global user.name &quot;stormzhang&quot;
+git config —global user.email &quot;stormzhang.dev@gmail.com&quot;
+commit前设置名字邮箱
+
+git clone git@github.com:stormzhang/test.git
+克隆自己的项目
+
+git remote add origin git@github.com:stormzhang/test.git
+关联本地已有项目
+[从0开始学习 GitHub 系列之「初识 GitHub」]
+
+[从0开始学习 GitHub 系列之「加入 GitHub」]
+
+[从0开始学习 GitHub 系列之「Git速成」]
+
+[从0开始学习 GitHub 系列之「向GitHub 提交代码」]
+
+[从0开始学习 GitHub 系列之「Git 进阶」]
+
+[从0开始学习 GitHub 系列之「团队合作利器 Branch」]
+
+[从0开始学习 GitHub 系列之「如何发现优秀的开源项目」]
+
+[从0开始学习 GitHub 系列之「GitHub 常见的几种操作」]
+</code></pre>
+<h2 id="android-studio快捷操作">Android Studio快捷操作</h2>
+<pre><code>File - close project 关闭整个工作组 回到最开始界面，按delete删除recent projects
+
+从Eclipse中导入项目：右键项目名，export -- Android -- general gradle...
+
+appearance设置主题
+
+新建App-----右键projects-----选择new Module-----选择EmptyActivity
+
+setting + edit + general 里的other 里的选项 show quick doc on mouse move   设置鼠标悬浮显示描述，但是很消耗性能
+
+setting + edit + general + code completion 里的case sensitive completion是大小写敏感，选择none
+
+ctrl + tab在不同的选项卡中切换
+
+alt + enter提示错误
+
+Ctrl + shift + enter 系统自动补全
+
+Ctrl + alt + O 管理引用
+
+Ctrl + Alt +Space	提示输入
+
+Ctrl + Q 放在关键字上 看文档描述
+
+Ctrl 点击看源码
+
+Ctrl + P 查看方法的参数
+
+Ctrl + shift + space   suggestion例如新建一个animation提示哪种类型
+
+在一句代码后Ctrl + Alt + T 包围语句，比如if
+
+ctrl + J 出现如for循环等语句
+
+Ctrl + shift + J 选中多行代码合为一行
+
+Ctrl + Alt + L 格式化代码
+
+Alt + Insert 生成代码 如get set toString
+
+ctrl + alt + V 创建局部变量，相当于eclipse中Ctrl+2+L
+
+Ctrl + alt + F 把局部变量变为成员或构造。。
+
+Ctrl + H 把鼠标移到一个类上看继承关系
+
+Ctrl + N 查找类
+
+.cast	类型转换
+
+.field	提取成员变量
+
+.var	提取局部变量
+
+fbc ()findviewbyid()
+
+psfs --&gt;  public static final String
+</code></pre>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://carryroy.github.io/post/hello-gridea/">
+                  <h3 class="post-title">
+                    Hello Gridea
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
