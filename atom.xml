@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://carryroy.github.io</id>
-    <title>Kedaifeng&apos;s blog</title>
-    <updated>2020-09-03T16:10:25.085Z</updated>
+    <title>柯代峰的博客</title>
+    <updated>2020-09-03T16:12:15.525Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://carryroy.github.io"/>
     <link rel="self" href="https://carryroy.github.io/atom.xml"/>
     <subtitle>Record and share</subtitle>
     <logo>https://carryroy.github.io/images/avatar.png</logo>
     <icon>https://carryroy.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Kedaifeng&apos;s blog</rights>
+    <rights>All rights reserved 2020, 柯代峰的博客</rights>
     <entry>
         <title type="html"><![CDATA[IDE快捷键]]></title>
         <id>https://carryroy.github.io/post/ide-kuai-jie-jian/</id>
