@@ -2,19 +2,16 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>零散经验 | Kedaifeng&#39;s blog</title>
-<link rel="shortcut icon" href="https://carryroy.github.io/favicon.ico?v=1596987688955">
+<title>GitHub的使用 | Kedaifeng&#39;s blog</title>
+<link rel="shortcut icon" href="https://carryroy.github.io/favicon.ico?v=1599142580184">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://carryroy.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="零散经验 | Kedaifeng&#39;s blog - Atom Feed" href="https://carryroy.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="GitHub的使用 | Kedaifeng&#39;s blog - Atom Feed" href="https://carryroy.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="Android控件
-Button没有src属性，而ImageButton有
-ImageButton的android:text属性不可以直接赋值
-GitHub
+    <meta name="description" content="GitHub
 
 
 
@@ -24,11 +21,23 @@ GitHub
 
 
 
-mkdir test
-创建文件夹test
+git status
+查看状态
 
 
-cd te..." />
+git init
+初始化git仓库
+
+
+git add a.md
+提交a.md到仓库
+
+
+git commit -m 'first commit'
+正式提交
+
+
+g..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -38,7 +47,7 @@ cd te..." />
       <div class="main-content">
         <div class="site-header">
   <a href="https://carryroy.github.io">
-  <img class="avatar" src="https://carryroy.github.io/images/avatar.png?v=1596987688955" alt="">
+  <img class="avatar" src="https://carryroy.github.io/images/avatar.png?v=1599142580184" alt="">
   </a>
   <h1 class="site-title">
     Kedaifeng&#39;s blog
@@ -91,24 +100,21 @@ cd te..." />
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              零散经验
+              GitHub的使用
             </h2>
             <div class="post-info">
               <span>
                 2020-08-08
               </span>
               <span>
-                5 min read
+                3 min read
               </span>
               
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <h2 id="android控件">Android控件</h2>
-<p>Button没有src属性，而ImageButton有</p>
-<p>ImageButton的android:text属性不可以直接赋值</p>
-<h2 id="github">GitHub</h2>
+                <h2 id="github">GitHub</h2>
 <table>
 <thead>
 <tr>
@@ -117,38 +123,6 @@ cd te..." />
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><code>mkdir test</code></td>
-<td>创建文件夹test</td>
-</tr>
-<tr>
-<td><code>cd test</code></td>
-<td>切换到test目录</td>
-</tr>
-<tr>
-<td><code>touch a.md</code></td>
-<td>新建a.md文件</td>
-</tr>
-<tr>
-<td><code>pwd</code></td>
-<td>显示当前目录</td>
-</tr>
-<tr>
-<td><code>cd d:/apk</code></td>
-<td>切换盘符</td>
-</tr>
-<tr>
-<td><code>cd ..</code></td>
-<td>返回</td>
-</tr>
-<tr>
-<td><code>cat a.md</code></td>
-<td>直接看a.md内容</td>
-</tr>
-<tr>
-<td><code>rm a.md</code></td>
-<td>删除a.md</td>
-</tr>
 <tr>
 <td><code>git status</code></td>
 <td>查看状态</td>
@@ -243,23 +217,25 @@ cd te..." />
 </tr>
 </tbody>
 </table>
-<p><code>ssh-keygen -t rsa</code><br>
+<p>1.<code>ssh-keygen -t rsa</code><br>
 指定 rsa 算法生成密钥，接着连续三个回车键（不需要输入密码），然后就会生成两个文件 id_rsa 和 id_rsa.pub ，而 id_rsa 是密钥，id_rsa.pub 就是公钥<br>
 接下来要做的是把 id_rsa.pub 的内容添加到 GitHub 上，这样你本地的 id_rsa 密钥跟 GitHub 上的 id_rsa.pub 公钥进行配对，授权成功才可以提交代码</p>
-<p><code>git push origin master</code><br>
+<p>2.<code>git push origin master</code><br>
 第一次推送master分支时，加上了 –u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令</p>
-<p><code>git push origin master</code><br>
+<p>3.<code>git push origin master</code><br>
 把本地代码推到远程 master 分支</p>
-<p><code>git pull origin master</code><br>
+<p>4.<code>git pull origin master</code><br>
 意思就是把远程最新的代码更新到本地，一般我们在 push 之前都会先 pull ，这样不容易冲突</p>
-<p><code>git config —global user.name &quot;stormzhang&quot;</code><br>
-<code>git config —global user.email &quot;stormzhang.dev@gmail.com&quot;</code><br>
-commit前设置名字邮箱</p>
-<p><code>git clone git@github.com:stormzhang/test.git</code><br>
-克隆自己的项目</p>
-<p><code>git remote add origin git@github.com:stormzhang/test.git</code><br>
-关联本地已有项目</p>
-<p><a href="http://mp.weixin.qq.com/s?__biz=MzA4NTQwNDcyMA==&amp;mid=2650661735&amp;idx=1&amp;sn=9aceac07d272e9202d1b5294f857a5ff&amp;scene=21#wechat_redirect">从0开始学习 GitHub 系列之「初识 GitHub」</a><br>
+<p>5.commit前设置名字邮箱<br>
+<code>git config —global user.name &quot;stormzhang&quot;</code><br>
+<code>git config —global user.email &quot;stormzhang.dev@gmail.com&quot;</code></p>
+<p>6.克隆自己的项目<br>
+<code>git clone git@github.com:stormzhang/test.git</code></p>
+<p>7.关联本地已有项目<br>
+<code>git remote add origin git@github.com:stormzhang/test.git</code></p>
+<blockquote>
+<p>参考<br>
+<a href="http://mp.weixin.qq.com/s?__biz=MzA4NTQwNDcyMA==&amp;mid=2650661735&amp;idx=1&amp;sn=9aceac07d272e9202d1b5294f857a5ff&amp;scene=21#wechat_redirect">从0开始学习 GitHub 系列之「初识 GitHub」</a><br>
 <a href="http://mp.weixin.qq.com/s?__biz=MzA4NTQwNDcyMA==&amp;mid=2650661762&amp;idx=1&amp;sn=8282241cf7414030f4e1d315a173beb1&amp;scene=21#wechat_redirect">从0开始学习 GitHub 系列之「加入 GitHub」</a><br>
 <a href="http://mp.weixin.qq.com/s?__biz=MzA4NTQwNDcyMA==&amp;mid=2650661788&amp;idx=1&amp;sn=b7c54f9b13f4e30fe151905f11c02800&amp;scene=21#wechat_redirect">从0开始学习 GitHub 系列之「Git速成」</a><br>
 <a href="http://mp.weixin.qq.com/s?__biz=MzA4NTQwNDcyMA==&amp;mid=2650661821&amp;idx=1&amp;sn=c6116ed82bff2d083bb152fbd8cbc38d&amp;scene=21#wechat_redirect">从0开始学习 GitHub 系列之「向GitHub 提交代码」</a><br>
@@ -267,120 +243,14 @@ commit前设置名字邮箱</p>
 <a href="http://mp.weixin.qq.com/s?__biz=MzA4NTQwNDcyMA==&amp;mid=2650661978&amp;idx=1&amp;sn=2f5329f5b2bfda7050822cc5e3a4f03f&amp;scene=21#wechat_redirect">从0开始学习 GitHub 系列之「团队合作利器 Branch」</a><br>
 <a href="http://mp.weixin.qq.com/s?__biz=MzA4NTQwNDcyMA==&amp;mid=2650662079&amp;idx=1&amp;sn=65605f0d9bd741d38f0b179980dc09f1&amp;scene=21#wechat_redirect">从0开始学习 GitHub 系列之「如何发现优秀的开源项目」</a><br>
 <a href="http://stormzhang.com/github/2016/09/21/learn-github-from-zero8/">从0开始学习 GitHub 系列之「GitHub 常见的几种操作」</a></p>
-<h2 id="android-studio快捷操作">Android Studio快捷操作</h2>
-<p>File - close project 关闭整个工作组 回到最开始界面，按delete删除recent projects</p>
-<p>从Eclipse中导入项目：右键项目名，export -- Android -- general gradle...</p>
-<p>appearance设置主题</p>
-<p>新建App-----右键projects-----选择new Module-----选择EmptyActivity</p>
-<p>setting + edit + general 里的other 里的选项 show quick doc on mouse move   设置鼠标悬浮显示描述，但是很消耗性能</p>
-<p>setting + edit + general + code completion 里的case sensitive completion是大小写敏感，选择none</p>
-<table>
-<thead>
-<tr>
-<th>快捷键</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>Ctrl + tab</code></td>
-<td>在不同的选项卡中切换</td>
-</tr>
-<tr>
-<td><code>alt + enter</code></td>
-<td>提示错误</td>
-</tr>
-<tr>
-<td><code>Ctrl + shift + enter</code></td>
-<td>系统自动补全</td>
-</tr>
-<tr>
-<td><code>Ctrl + alt + O</code></td>
-<td>管理引用</td>
-</tr>
-<tr>
-<td><code>Ctrl + Alt +Space</code></td>
-<td>提示输入</td>
-</tr>
-<tr>
-<td><code>Ctrl + Q</code></td>
-<td>放在关键字上看文档描述</td>
-</tr>
-<tr>
-<td><code>Ctrl + P</code></td>
-<td>查看方法的参数</td>
-</tr>
-<tr>
-<td><code>Ctrl + shift + space</code></td>
-<td>suggestion例如新建一个animation提示哪种类型</td>
-</tr>
-<tr>
-<td>在一句代码后<code>Ctrl + Alt + T</code></td>
-<td>包围语句，比如if</td>
-</tr>
-<tr>
-<td><code>Ctrl + J</code></td>
-<td>出现如for循环等语句</td>
-</tr>
-<tr>
-<td><code>Ctrl + shift + J</code></td>
-<td>选中多行代码合为一行</td>
-</tr>
-<tr>
-<td><code>Ctrl + Alt + L</code></td>
-<td>格式化代码</td>
-</tr>
-<tr>
-<td><code>Alt + Insert</code></td>
-<td>生成代码 如<code>get set toString</code></td>
-</tr>
-<tr>
-<td><code>Ctrl + alt + V</code></td>
-<td>创建局部变量，相当于eclipse中<code>Ctrl+2+L</code></td>
-</tr>
-<tr>
-<td><code>Ctrl + alt + F</code></td>
-<td>把局部变量变为成员或构造</td>
-</tr>
-<tr>
-<td><code>Ctrl + H</code></td>
-<td>把鼠标移到一个类上看继承关系</td>
-</tr>
-<tr>
-<td><code>Ctrl + N</code></td>
-<td>查找类</td>
-</tr>
-<tr>
-<td><code>.cast</code></td>
-<td>类型转换</td>
-</tr>
-<tr>
-<td><code>.field</code></td>
-<td>提取成员变量</td>
-</tr>
-<tr>
-<td><code>.var</code></td>
-<td>提取局部变量</td>
-</tr>
-<tr>
-<td><code>fbc()</code></td>
-<td><code>findviewbyid()</code></td>
-</tr>
-<tr>
-<td><code>psfs</code></td>
-<td><code>public static final String</code></td>
-</tr>
-</tbody>
-</table>
+</blockquote>
 
               </div>
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
 <li>
 <ul>
-<li><a href="#android%E6%8E%A7%E4%BB%B6">Android控件</a></li>
 <li><a href="#github">GitHub</a></li>
-<li><a href="#android-studio%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C">Android Studio快捷操作</a></li>
 </ul>
 </li>
 </ul>
@@ -390,15 +260,6 @@ commit前设置名字邮箱</p>
           </article>
         </div>
 
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://carryroy.github.io/post/hello-gridea/">
-              <h3 class="post-title">
-                Hello Gridea
-              </h3>
-            </a>
-          </div>
         
 
         

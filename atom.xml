@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://carryroy.github.io</id>
     <title>Kedaifeng&apos;s blog</title>
-    <updated>2020-08-09T15:41:32.656Z</updated>
+    <updated>2020-09-03T14:18:15.181Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://carryroy.github.io"/>
     <link rel="self" href="https://carryroy.github.io/atom.xml"/>
@@ -11,23 +11,24 @@
     <icon>https://carryroy.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Kedaifeng&apos;s blog</rights>
     <entry>
-        <title type="html"><![CDATA[零散经验]]></title>
+        <title type="html"><![CDATA[IDE快捷键]]></title>
+        <id>https://carryroy.github.io/post/ide-kuai-jie-jian/</id>
+        <link href="https://carryroy.github.io/post/ide-kuai-jie-jian/">
+        </link>
+        <updated>2020-09-03T14:09:26.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Android笔记]]></title>
+        <id>https://carryroy.github.io/post/android-bi-ji/</id>
+        <link href="https://carryroy.github.io/post/android-bi-ji/">
+        </link>
+        <updated>2020-09-03T14:08:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GitHub的使用]]></title>
         <id>https://carryroy.github.io/post/ling-san-jing-yan/</id>
         <link href="https://carryroy.github.io/post/ling-san-jing-yan/">
         </link>
         <updated>2020-08-08T13:53:05.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://carryroy.github.io/post/hello-gridea/</id>
-        <link href="https://carryroy.github.io/post/hello-gridea/">
-        </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></content>
     </entry>
 </feed>
